@@ -78,6 +78,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', [
 		'notify',
+		'browserify:development',
 		'compass:development',
 		'connect:development',
 		'watch'
