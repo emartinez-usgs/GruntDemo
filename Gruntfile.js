@@ -50,6 +50,7 @@ module.exports = function (grunt) {
 					livereload: true
 				},
 				files: [
+					'.tmp/css/**/*.css',
 					'src/css/**/*.css',
 					'src/**/*.html',
 					'src/js/**/*.js'
