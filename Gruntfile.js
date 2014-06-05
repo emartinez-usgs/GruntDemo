@@ -5,6 +5,15 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.initConfig({
+		compass: {
+			development: {
+				options: {
+					sassDir: 'src/css',
+					cssDir: '.tmp/css'
+				}
+			}
+		},
+
 		connect: {
 			development: {
 				options: {
@@ -51,6 +60,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', [
 		'notify',
+		'compass:development',
 		'connect:development',
 		'watch'
 	]);
