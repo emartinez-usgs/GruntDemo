@@ -18,6 +18,7 @@ module.exports = function (grunt) {
 	});
 
 	grunt.registerTask('default', [
-		'notify'
+		'notify',
+		'connect:development:keepalive'
 	]);
 };
