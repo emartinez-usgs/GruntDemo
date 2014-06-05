@@ -36,6 +36,10 @@ module.exports = function (grunt) {
 				files: ['src/js/**/*.js'],
 				tasks: ['notify:js']
 			},
+			scss: {
+				files: ['src/css/**/*.scss'],
+				tasks: ['compass:development', 'notify:scss']
+			},
 
 			gruntfile: {
 				files: ['Gruntfile.js'],
