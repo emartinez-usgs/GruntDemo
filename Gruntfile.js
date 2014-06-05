@@ -6,6 +6,18 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.initConfig({
+		browserify: {
+			development: {
+				src: ['src/js/main.js'],
+				dest: '.tmp/js/index.js',
+				options: {
+					bundleOptions: {
+						debug: true // Include source maps
+					}
+				}
+			}
+		},
+
 		compass: {
 			development: {
 				options: {
