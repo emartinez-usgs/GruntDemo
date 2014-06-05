@@ -30,7 +30,7 @@ module.exports = function (grunt) {
 		connect: {
 			development: {
 				options: {
-					base: ['.tmp', 'src'],
+					base: ['.tmp', 'src', 'node_modules'],
 					open: true
 				}
 			}
