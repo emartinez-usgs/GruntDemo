@@ -50,6 +50,7 @@ module.exports = function (grunt) {
 
 	grunt.registerTask('default', [
 		'notify',
-		'connect:development:keepalive'
+		'connect:development',
+		'watch'
 	]);
 };
