@@ -11,6 +11,36 @@ module.exports = function (grunt) {
 					open: true
 				}
 			}
+		},
+
+		watch: {
+			css: {
+				files: ['src/css/**/*.css'],
+				tasks: ['notify:css']
+			},
+			html: {
+				files: ['src/**/*.html'],
+				tasks: ['notify:html']
+			},
+			js: {
+				files: ['src/js/**/*.js'],
+				tasks: ['notify:js']
+			},
+
+			gruntfile: {
+				files: ['Gruntfile.js'],
+				tasks: ['notify:gruntfile']
+			},
+			livereload: {
+				options: {
+					livereload: true
+				},
+				files: [
+					'src/css/**/*.css',
+					'src/**/*.html',
+					'src/js/**/*.js'
+				]
+			},
 		}
 	});
 
