@@ -44,8 +44,8 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.registerTask('notify', function () {
-		console.log('Something happened...');
+	grunt.registerTask('notify', function (task) {
+		console.log('Something happened [' + task + ']...');
 	});
 
 	grunt.registerTask('default', [
