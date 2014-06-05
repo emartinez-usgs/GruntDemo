@@ -17,7 +17,7 @@ module.exports = function (grunt) {
 		connect: {
 			development: {
 				options: {
-					base: 'src',
+					base: ['.tmp', 'src'],
 					open: true
 				}
 			}
